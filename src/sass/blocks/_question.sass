@@ -36,8 +36,12 @@
             font-weight: 300
             font-size: 13px
             border: 1px solid #c9c9c9
+            outline: none
+            transition: 0.3s all
             &:nth-child(3)
                 margin-right: 0
+            &:focus
+                box-shadow: 3px 3px 5px black
         textarea
             width: 820px
             margin-top: 7px
@@ -50,6 +54,10 @@
             font-size: 13px
             font-weight: 300
             color: #000000
+            outline: none
+            transition: 0.3s all
+            &:focus
+                box-shadow: 3px 3px 5px black
         button
             display: block
             margin-top: 17px
