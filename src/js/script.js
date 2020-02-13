@@ -18,6 +18,15 @@ $(document).ready(function () {
                 }
             },
             {
+                breakpoint: 720,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            },
+            {
                 breakpoint: 480,
                 settings: {
                     arrows: false,
@@ -28,21 +37,17 @@ $(document).ready(function () {
             }
         ]
     });
-    window.addEventListener('DOMContentLoaded', () => {
-        const menu = document.querySelector('.menu'),
-            menuItem = document.querySelectorAll('.menu_item'),
-            hamburger = document.querySelector('.hamburger');
+    let x = 0;
+    document.getElementById('burger').onclick = function () {
+        if (x == 0) {
+            document.getElementById('burger').classList.add('burger-active');
+            document.getElementById('burgermenu').classList.remove('burgermenu-hidden');
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger_active');
-            menu.classList.toggle('menu_active');
-        });
-
-        menuItem.forEach(item => {
-            item.addEventListener('click', () => {
-                hamburger.classList.toggle('hamburger_active');
-                menu.classList.toggle('menu_active');
-            });
-        });
-    });
+            x++;
+        } else if (x == 1) {
+            document.getElementById('burger').classList.remove('burger-active');
+            document.getElementById('burgermenu').classList.add('burgermenu-hidden');
+            x = 0;
+        }
+    };
 });
