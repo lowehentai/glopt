@@ -12,12 +12,13 @@
 <body>
     <div id="burgermenu" class="burgermenu burgermenu-hidden">
         <div class="burger__navigation">
-            <a href="#" class="burger__puncts">Преимущества</a>
-            <a href="#" class="burger__puncts">Наша работа</a>
-            <a href="#" class="burger__puncts">Цены</a>
-            <a href="#" class="burger__puncts">Схема работы</a>
-            <a href="#" class="burger__puncts">Отзывы</a>
-            <a href="#" class="burger__puncts">Контакты</a>
+            <a href="#punct1" class="burger__puncts">Преимущества</a>
+            <a href="#punct2" class="burger__puncts">Наша работа</a>
+            <a href="#punct3" class="burger__puncts">Цены</a>
+            <a href="#punct4" class="burger__puncts">Схема работы</a>
+            <a href="#punct5" class="burger__puncts">Отзывы</a>
+            <a href="#punct6" class="burger__puncts">Контакты</a>
+            <div id="exit" class="burger__puncts"><--</div>
         </div>
     </div>
     <div class="background">
@@ -27,19 +28,19 @@
             <span></span>
         </div>
     </div>
-    <header class="promo">
+    <header id="up" class="promo">
         <div class="container">
             <nav>
                 <a href="#" class="promo__logo">
                     <img src="img/logo/gloptLogo.png" alt="Logo">
                 </a>
                 <div class="promo__navigation">
-                    <a href="#" class="promo__puncts">Преимущества</a>
-                    <a href="#" class="promo__puncts">Наша работа</a>
-                    <a href="#" class="promo__puncts">Цены</a>
-                    <a href="#" class="promo__puncts">Схема работы</a>
-                    <a href="#" class="promo__puncts">Отзывы</a>
-                    <a href="#" class="promo__puncts">Контакты</a>
+                    <a href="#punct1" class="promo__puncts">Преимущества</a>
+                    <a href="#punct2" class="promo__puncts">Наша работа</a>
+                    <a href="#punct3" class="promo__puncts">Цены</a>
+                    <a href="#punct4" class="promo__puncts">Схема работы</a>
+                    <a href="#punct5" class="promo__puncts">Отзывы</a>
+                    <a href="#punct6" class="promo__puncts">Контакты</a>
                 </div>
                 <div class="promo__info">Есть вопросы?
                     <span>+7 (926) 423 01 00</span>
@@ -78,7 +79,7 @@
             <button class="promo__btn button button-big">Получить расчет</button>
         </div>
     </header>
-    <section class="advantages">
+    <section id="punct1" class="advantages">
         <div class="container">
             <h2 class="title">Преимущества работы с GlobalOpt</h2>
             <div class="advantages__wrapper">
@@ -171,7 +172,7 @@
             </div>
         </div>
     </section>
-    <section class="work">
+    <section id="punct2" class="work">
         <div class="container">
             <h2 class="title">Наша работа - больше чем просто доставка</h2>
             <div class="liner"></div>
@@ -220,7 +221,7 @@
                 товар, который будет отвечать Вашим запросам как по качеству, так и по цене.</div>
         </div>
     </section>
-    <section class="prices">
+    <section id="punct3" class="prices">
         <div class="container">
             <h2 class="title">Цены на любой вариант доставки</h2>
             <div class="liner"></div>
@@ -306,7 +307,7 @@
                 поставки от завода-изготовителя.</div>
         </div>
     </section>
-    <section class="scheme">
+    <section id="punct4" class="scheme">
         <div class="container">
             <h2 class="title">Схема работы с нами</h2>
             <div class="scheme__wrapper">
@@ -351,7 +352,7 @@
             </div>
         </div>
     </section>
-    <section class="review">
+    <section id="punct5" class="review">
         <h2 class="title">отзывы наших клиентов</h2>
         <div class="liner"></div>
         <div class="review__title-descr descr-big">Мы всегда стараемся помочь клиентам, что бы они обращались к нам
@@ -407,7 +408,7 @@
             </div>
         </div>
     </section>
-    <section class="question">
+    <section id="punct6" class="question">
         <div class="container">
             <div class="question__cards">
                 <h2 class="question__cards_head">Остались вопросы?<span>Напишите нам!</span></h2>
@@ -451,6 +452,9 @@
             </div>
         </div>
     </footer>
+    <a class="pageup" href="#up">
+        <img src="img/icon/up.svg" alt="Up">
+    </a>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>

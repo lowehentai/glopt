@@ -50,4 +50,67 @@ $(document).ready(function () {
             x = 0;
         }
     };
+    document.getElementById('exit').onclick = function () {
+        document.getElementById('burgermenu').classList.add('burgermenu-hidden');
+        document.getElementById('burger').classList.remove('burger-active');
+
+    };
+
+    //Smooth scroll nad pageup
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 700) {
+            $('.pageup').fadeIn(300);
+        } else {
+            $('.pageup').fadeOut(300);
+        }
+    });
+    $("a[href='#up']").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(_href).offset().top + "px"
+        });
+        return false;
+    });
+    $("a[href='#punct1']").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(_href).offset().top + "px"
+        });
+        return false;
+    });
+    $("a[href='#punct2']").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(_href).offset().top + "px"
+        });
+        return false;
+    });
+    $("a[href='#punct3']").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(_href).offset().top + "px"
+        });
+        return false;
+    });
+    $("a[href='#punct4']").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(_href).offset().top + "px"
+        });
+        return false;
+    });$("a[href='#punct5']").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(_href).offset().top + "px"
+        });
+        return false;
+    });
+    $("a[href='#punct6']").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(_href).offset().top + "px"
+        });
+        return false;
+    });
 });
